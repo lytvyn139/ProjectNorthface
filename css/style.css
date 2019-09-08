@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+/* animation copy-paste */
+.glitch-window {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 100%;
+  color: #222222;
+  text-shadow: 2px 0 #F9F8F8, -1px 0 yellow, -2px 0 green;
+  overflow: hidden;
+  -webkit-animation: crt-me 2500ms infinite linear alternate-reverse;
+  animation: crt-me 2500ms infinite linear alternate-reverse;
+}
+@-webkit-keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+
+  10% {
+    clip: rect(112px, 9999px, 76px, 0);
+  }
+
+  20% {
+    clip: rect(85px, 9999px, 77px, 0);
+  }
+
+  30% {
+    clip: rect(27px, 9999px, 97px, 0);
+  }
+
+  40% {
+    clip: rect(64px, 9999px, 98px, 0);
+  }
+
+  50% {
+    clip: rect(61px, 9999px, 85px, 0);
+  }
+
+  60% {
+    clip: rect(99px, 9999px, 114px, 0);
+  }
+
+  70% {
+    clip: rect(34px, 9999px, 115px, 0);
+  }
+
+  80% {
+    clip: rect(98px, 9999px, 129px, 0);
+  }
+
+  90% {
+    clip: rect(43px, 9999px, 96px, 0);
+  }
+
+  100% {
+    clip: rect(82px, 9999px, 64px, 0);
+  }
+}
+
+@keyframes crt-me {
+  0% {
+    clip: rect(31px, 9999px, 94px, 0);
+  }
+
+  10% {
+    clip: rect(112px, 9999px, 76px, 0);
+  }
+
+  20% {
+    clip: rect(85px, 9999px, 77px, 0);
+  }
+
+  30% {
+    clip: rect(27px, 9999px, 97px, 0);
+  }
+
+  40% {
+    clip: rect(64px, 9999px, 98px, 0);
+  }
+
+  50% {
+    clip: rect(61px, 9999px, 85px, 0);
+  }
+
+  60% {
+    clip: rect(99px, 9999px, 114px, 0);
+  }
+
+  70% {
+    clip: rect(34px, 9999px, 115px, 0);
+  }
+
+  80% {
+    clip: rect(98px, 9999px, 129px, 0);
+  }
+
+  90% {
+    clip: rect(43px, 9999px, 96px, 0);
+  }
+
+  100% {
+    clip: rect(82px, 9999px, 64px, 0);
+  }
+}
+/* END  OF ANIMATION  */
+
+body {
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  position: relative;
+  height: 100vh;
+  color: #555;
+}
+
+header.header h1 {       /* added for animation */
+   font-size: 6rem;
+  color: #222222;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+header.header h2 {  /* added for animation */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+h3 {
+  background: black;
+  border: 5px solid black;
+  color: greenyellow;
+  text-align: right;
+  width: auto;
+  font-size: 35px;
+}
+
+.luckyButton {
+  position: absolute;
+  width: 150px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 4px solid orange;
+  top: 250px;
+  left: 45%;
+}
+.luckyButton:hover {
+  background-color: rgb(160, 67, 10);
+  color: white;
+}
+
+.infoCanvas0,
+.infoCanvas1,
+.infoCanvas2,
+.infoCanvas3,
+.infoCanvas4,
+.infoCanvas5,
+.infoCanvas6,
+.infoCanvas7 {
+  position: absolute;
+  display: inline-block;
+  align-items: bottom;
+  top: 385px;
+  left: 340px;
+  width: 900px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: orange;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60);
+  color: black;
+  font-size: 20px;
+  text-align: right;
+}
+
+.backpackCanvas{
+  margin-left: 12px;
+}
